@@ -16,7 +16,7 @@ body {
     margin-left: 20px;
     font-weight: 100; }
     .navbar-default .nav.navbar-nav > li a {
-      color: white; }
+      color: #FFF; }
     .navbar-default .nav.navbar-nav > li #cart img {
       width: 100%;
       max-width: 40px; }
@@ -41,6 +41,12 @@ body {
 .navbar > .container .navbar-brand-centered,
 .navbar > .container-fluid .navbar-brand-centered {
   margin-left: -80px; }
+
+.items .funiture {
+  -webkit-transition: all 1s ease; }
+
+.items .funiture:hover {
+  -webkit-filter: blur(1px); }
 
 img {
   width: 100%; }

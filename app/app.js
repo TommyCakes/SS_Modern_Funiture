@@ -12,6 +12,18 @@ angular.module('App', ['ui.router'])
     url: "/store",
     templateUrl: 'app/states/store.html'
   })
+  .state('store.sofas', {
+    url: '/sofas',
+    templateUrl: 'app/states/sofas.html'
+  })
+  .state('store.beds', {
+    url: '/beds',
+    templateUrl: 'app/states/beds.html'
+  })
+  .state('store.misc', {
+    url: '/misc',
+    templateUrl: 'app/states/misc.html'
+  })
   .state('about', {
     url: "/about",
     templateUrl: 'app/states/about.html'

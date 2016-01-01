@@ -20,7 +20,7 @@ body {
     margin-left:20px;
     font-weight:100;
     a {
-      color:white;
+      color:$primary-color;
     }
     #cart {
       img {
@@ -54,6 +54,15 @@ body {
     margin-left: -80px;
 }
 
+.items {
+  .funiture {
+       -webkit-transition: all 1s ease;
+    }
+    .funiture:hover {
+      -webkit-filter: blur(1px);
+    }
+  }
+
 img {
   width:100%;
 }
@@ -63,7 +72,6 @@ img {
   img {
     width:100%;
     img:hover {
-
     }
   }
   .header-bar {
