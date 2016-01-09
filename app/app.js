@@ -20,6 +20,10 @@ angular.module('App', ['ui.router'])
     url: '/beds',
     templateUrl: 'app/states/beds.html'
   })
+  .state('store.tables', {
+    url: '/tables',
+    templateUrl: 'app/states/tables.html'
+  })
   .state('store.misc', {
     url: '/misc',
     templateUrl: 'app/states/misc.html'
