@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="app/assets/stylesheets/styles.css">
-  <title>Testing!</title>
+  <title>SS</title>
 </head>
-<body>
+<body ng-controller="buyCtrl as vm">
 
   <nav class="navbar navbar-default" role="navigation">
      <div class="container">
@@ -32,7 +32,7 @@
    <div class="collapse navbar-collapse" id="navbar-brand-centered">
      <ul class="nav navbar-nav">
             <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="home">HOME &nbsp  &nbsp |</a></li>
-            <li><a data-toggle="collapse" data-target=".navbar-collapse"ui-sref="store">STORE</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse"ui-sref="store.sofas">STORE</a></li>
 
        <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -52,6 +52,7 @@
             <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="contact">CONTACT &nbsp</a></li>
             <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="cart" id="cart">
               <img src="app/img/cart.png" alt="">
+              {{vm.basketQuantity}}
             </a></li>
        <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a> -->

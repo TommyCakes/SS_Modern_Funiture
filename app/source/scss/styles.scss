@@ -126,6 +126,13 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .funiture_store {
+      img {
+        height:400px;
+      }
+  }
+}
 .footer {
   position:relative;
   margin:0 auto;

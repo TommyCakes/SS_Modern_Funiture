@@ -41,3 +41,22 @@ angular.module('App', ['ui.router'])
     templateUrl: 'app/states/cart.html'
   })
 })
+.controller('buyCtrl', function() {
+  var self = this;
+  self.rose = {'Rose': 267}
+  self.zinc = {'Zinc': 999}
+  var checkout = []
+  self.basketQuantity = 0;
+  // self.sofa = [self.rose]
+  this.buy = function(sofa) {
+    console.log('Added to basket!')
+    checkout.push(sofa)
+    console.log(checkout)
+    console.log(checkout.each)
+    self.basketQuantity++;
+  }
+this.clear = function() {
+  self.basketQuantity = 0;
+}
+
+})
