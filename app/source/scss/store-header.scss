@@ -1,0 +1,31 @@
+.store{
+    position:relative;
+  img {
+    width:100%;
+    border-radius:50%;
+    height:50px;
+    max-width:70px;
+    z-index:929;
+    background:transparent;
+  }
+  .funiture-select{
+    width:50%;
+    margin-left:25%;
+  }
+  .selection {
+      background: #f7f7f7;
+      height:60px;
+      bottom:20px;
+      position: relative;
+      margin-bottom:-40px;
+    .select {
+      width:50%;
+      margin-left:24%;
+    }
+  }
+
+  a {
+    color:black;
+    text-decoration: none;
+  }
+}

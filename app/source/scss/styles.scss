@@ -1,8 +1,10 @@
 @import 'mixin';
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700|Roboto:400,100,300);
+
 body {
-  background: mintcream;
+  // background: mintcream;
   text-align:center;
   // font-family: 'Open Sans', sans-serif;
   // font-family: 'Source Sans Pro', sans-serif;
@@ -10,50 +12,13 @@ body {
   margin-top:0px;
 }
 
-.navbar-default {
-  z-index:999;
-  border:transparent;
-  background:black;
-  margin-bottom:-20px;
-  .nav.navbar-nav>li {
-    margin-right:-20px;
-    margin-left:20px;
-    font-weight:100;
-    a {
-      color:$primary-color;
-    }
-    #cart {
-      img {
-      width:100%;
-      max-width:40px;
-      }
-    }
-  }
-}
-.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    background-color: transparent;
-    .logo{
-      position:absolute;
-      max-width:200px;
-      top:0px;
-      left:0;
-      right:0;
-      margin:auto;
-      img {
-        width:100%;
-      }
-    }
-}
-.navbar>.container .navbar-brand-centered,
-.navbar>.container-fluid .navbar-brand-centered {
-    margin-left: -80px;
-}
+// Navbar style
+@import 'navbar';
+//
 
+.short {
+  width:50%;
+}
 .items {
   .funiture {
        -webkit-transition: all 1s ease;
@@ -79,36 +44,12 @@ body {
   }
 }
 
-.header {
-  background:white;
-  width:100%;
-  position: relative;
-  margin-top:20px;
-  margin-bottom:100px;
-  z-index:99;
-}
-.sub-header {
-  background:white;
-  width:100%;
-  position: relative;
-  margin-top:0px;
-  z-index:99;
-}
-.store{
-    position:relative;
-  img {
-    width:100%;
-    height:50px;
-    max-width:60px;
-    z-index:929;
-  }
-  .funiture-select{
-    width:70%;
-  }
-  .select {
-    background: lightgrey;
-  }
-}
+@import 'header';
+
+// Store view
+@import 'store-header';
+//
+
 .funiture_store {
     position: relative;
     top:10px;
@@ -133,26 +74,10 @@ body {
       }
   }
 }
-.footer {
-  position:relative;
-  margin:0 auto;
-  height:10px;
-  background:transparent;
-  bottom:-600px;
-  li {
-    display: block;
-    height:20px;
-  }
-}
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 0;
-  padding-left: 0;
-}
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
+// Footer Style
+  @import 'footer';
+//
+
+// Bootstrap
+  @import 'bootstrap';
