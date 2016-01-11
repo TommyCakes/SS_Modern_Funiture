@@ -2,11 +2,11 @@
   position: relative; }
   .store img {
     width: 100%;
-    border-radius: 50%;
-    height: 50px;
-    max-width: 70px;
+    height: 40px;
+    max-width: 50px;
     z-index: 929;
-    background: transparent; }
+    background: transparent;
+    padding: 1px; }
   .store .funiture-select {
     width: 50%;
     margin-left: 25%; }
